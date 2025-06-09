@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "RealDeal Extension",
+  "version": "1.1",
+  "description": "Helps users make informed shopping decisions with price tracking and seller analysis",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "https://www.meesho.com/*",
+    "https://www.amazon.in/*",
+    "https://www.flipkart.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.meesho.com/*",
+        "https://www.amazon.in/*",
+        "https://www.flipkart.com/*"
+      ],
+      "js": ["SellerReputation.js", "PriceData.js", "ReviewsAuthenticity.js", "content.js", "RealDealmeter.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["PriceData.js", "libs/highcharts.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
