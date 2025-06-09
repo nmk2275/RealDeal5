@@ -151,7 +151,7 @@ window.RealDeal.scrapeReviews = async () => {
     }
 
   } catch (err) {
-    console.warn('[RealDeal] Failed to close drawer:', err);
+ 
   }
 
   return reviews;
