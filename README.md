@@ -55,7 +55,6 @@ It provides supporting information to help you make better shopping decisions an
 📬 Feedback
 Have suggestions or found an issue? Feel free to open an issue or contact the developer to help improve RealDeal.
 
-If you want, I can also help you customize sections like Screenshots, Demo Video Link, or Detailed Usage Instructions. Would you like to add those?
 
 
 
